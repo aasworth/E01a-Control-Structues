@@ -1,23 +1,44 @@
 Open main1.py. Before running it, what do you expect this program to do? 
+    
+    Just looking at the program, it looks like the first thing that it is going to do is check to make sure 
+    that the correct version of python is installed on the computer, and then it will print out "Greetings!" on one line,
+    and "What is my favorite color?" on the next like down.
 
 Now right click on the window and select “Run Python File in Terminal”. Click in the bottom panel, and answer the question. Describe what happened. 
 
+    When I ran the program, it printed what I expected it to in the previous answer, but instead of just printing and finishing the program,
+    it was waiting for me to input what my favorite color is.  So, I input that my favorite color is blue.
+
 What do you think the program did with what you typed?
 
+    Well, seeing as the written program just says input and then it doesn't say to do anythign with the input received, I do not think that the program
+    did anything with what I typed.
 
 
 Open main2.py. Before running it, describe how this is different than main1.py. 
 
+    This file is different because the input command is now assigned to a variable called "color".
+
 What do you think the color = input() will do? 
+
+        I believe that having the input set to a variable, it will now store whatever the response to the input is
+        inside of the variable, meaning that it could now be manipulated however the coder would like.
+        In this case, I believe that it will just print out whatever the user responds to the input question.
 
 Run the program in the terminal and answer the question. Did the program do what you expected?
 
+    Yes, the program did exactly what I had expected it to do.
 
 
 Open main3.py. Before running it, describe how this is different than main2.py. 
 
+    This file is different that main2.py because it added more code to it again. This time, the file is taking the color
+    that the user inputs, and it puts it into an if loop to "check" if it is in agreement with some terms that the coder has set.
+    in this case, it is checking to see if the color is red, and if it is, it prints correct, if not, it prints "Sorry, try again."
+
 What is happening on lines 11–14? 
 
+    In these lines, the if loop is taking the color variable that the input is set to
 Why are lines 12 and 14 indented? 
 
 Run the program and answer the question. What happens if you don’t capitalize Red? 
