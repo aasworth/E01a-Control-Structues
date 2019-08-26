@@ -38,9 +38,13 @@ Open main3.py. Before running it, describe how this is different than main2.py.
 
 What is happening on lines 11–14? 
 
-    In these lines, the if loop is taking the color variable that the input is set to
+    In these lines, the if loop is taking the color variable that the input is set to and checking to see if it is "Red." if it is "Red", it will
+    print out "Correct!". if the color is not "Red", it will print out "Sorry, try again."
+
 Why are lines 12 and 14 indented? 
 
+    Python syntax dictates that lines of code inside of loops or statements needs to be indented.
+    
 Run the program and answer the question. What happens if you don’t capitalize Red? 
 
 What does this tell you about "color"?
