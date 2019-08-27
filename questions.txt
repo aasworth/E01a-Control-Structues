@@ -44,40 +44,69 @@ What is happening on lines 11–14?
 Why are lines 12 and 14 indented? 
 
     Python syntax dictates that lines of code inside of loops or statements needs to be indented.
-    
+
 Run the program and answer the question. What happens if you don’t capitalize Red? 
+
+    If you do not capitalize "Red" when putting your answer into the terminal, it returns "Sorry, try again."
+    It does that because variables must be exact for conditional statements.
 
 What does this tell you about "color"?
 
+    color is a variable, and when using comparative logic, or any logic at all, variables must be exactly the same as what you are checking
+    against.
 
 
 Open main4.py. Before running it, describe how this is different than main2.py. 
 
+    In this file, it is different from main2 and main3 now because instead of only using comparative logic to check against "Red", it checks against the lowercase
+    "red" version as well. 
+
 What problem is this trying to solve? 
+
+    Now, because it checks against the lowercase version as well, it reduces the chance of user error happening when running the program.
 
 Run the program and answer the question. What happens if you use some other capitalization scheme (i.e., “RED” or “reD“)?
 
+    Once again, just as in main3 when I tried to run it with only "red", if I try any other capitalization scheme with it, it returns
+    "Sorry, try again." it does this again, because in comparative logic, it needs to be exact.
 
 
 Open main5.py. What do you expect line 11 to do? 
 
+    The ".lower" tool is taking the variable and changing every character in the string into a lowercase character.
+
 What problem is it trying to solve? 
+
+    Using the .lower tool, this once again solves the problem of user error and makes it so if the user were to input and variety of uppercase characters,
+    it will still do the comparison needed to check if the favorite color is red.
 
 Run the program and answer the question. What happens if you add spaces before or after the word (i.e., “  RED  “ or “ red”)?
 
+    If you add any spaces before or after the word that you input, the loop will still return "Sorry, try again." It does this because a space counts as a character inside of a string.
 
 
 Open main6.py. How is line 11 different than main5.py? 
 
+    Line 11 is different because it added the .strip tool on top of the .lower tool.
+
 What would you guess .strip() is doing? 
+
+    To place a guess, I would assume that the .strip tool is stripping any spaces or "blank"/"empty" characters away from the word red.
 
 Run the program and answer the question. Is there another way of writing “red” that will break this logic?
 
+    If you put any spaces between the characters of "red", such as " R e d", that trips the loop and returns "Sorry, try again."
 
 
 Open main7.py. Before running this program, how do you expect this to be different than main6.py? 
 
+    This will run the same as main6, except now if you were to enter "pink" or any capitalized variation of "Pink", it will return "Close!"
+
 What is the purpose of line 11? 
+
+    Line 11 just takes what was being done inside the loop and puts it on its own line. putting it outside of the loop is good because now it technically takes less
+    time to compute, and less time to write because now it only needs to be written once, where if kept in the loop, 
+    it would need to be written twice, once for the red case and once for the pink case.
 
 Run the program and answer the question.
 
@@ -85,9 +114,18 @@ Run the program and answer the question.
 
 Open main8.py. What is the purpose of line 11? 
 
+    What this while loop is doing, is it makes the program keep running until the user guesses the correct color, being red. 
+
 Why are lines 12–19 indented? 
 
+    The lines are indented here because they are all included inside of the while loop. as python syntax dictates, all lines inside of a loop must be indented. 
+    If one of these lines is not indented, it ends the loop.
+
 Run the program. What would happen if line 12 were moved before line 11 (and no longer indented)? 
+
+    If you were to move that line, it would make it so that if anything except for "red" exactly was typed, the while loop would never have
+    an end statement, creating an endless loop. also, if "red" exactly were typed, it would not print anything because it would never technically
+    enter the while loop.
 
 Make that change and run the program again. To end any Python program, you can type ctrl-c.
 
@@ -95,9 +133,15 @@ Make that change and run the program again. To end any Python program, you can t
 
 Open main9.py. What is happening on line 12? 
 
+    Line 12 is the beginning of a while loop, with the conditional statement being that the while loop will begin if the color is not red.
+
 What is the purpose of “count”? 
 
+    Count keeps track of how many times a guess is made, and incremented up by each time that the while loops loops through.
+
 What is happening on line 22? 
+
+    Line 22 takes the count variable, and uses the .format tool to place that number that count is holding inside of the "{0}" that is in the quotations.
 
 Run the program.
 
@@ -107,3 +151,6 @@ Run the program.
 Commit your changes and push them back to the repository. 
 
 Did you do the extra credit?
+
+    Yes, I did the extra credit.
+    
